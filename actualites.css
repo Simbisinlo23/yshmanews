@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo{
+    color: rgb(12, 4, 80);
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.logo span{
+    color: #cf0c3d;
+}
+
+.navbar{
+    display: contents;
+    position: flex;
+}
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    color: #173e86;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.btn-Redaction{
+    padding: 10px 20px;
+    background: #cf0c3d;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.btn-Redaction:hover{
+    background: #f4f8f8;
+    transition: ease-out;
+}
+
+header .navbar li a:hover{
+    color: #eee5e7;
+    border-bottom: 2px solid #cf0c3d;
+}
+
+
+.baniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff;
+    /*a la place de coor, c'est background-image dont le code est: url:(./photo/nom image.jpg)*/
+    background-size: cover;
+}
+
+.baniere .contenu{
+    max-width: 70%;
+    text-align: center;
+    color: #022424;
+    text-decoration: none;
+}
+
+.baniere .contenu h2{
+    color: rgb(121, 16, 16);
+    font-size: 15.5px;
+    text-decoration: underline;
+}
+
+.baniere .contenu a{
+    color: #173e86;
+}

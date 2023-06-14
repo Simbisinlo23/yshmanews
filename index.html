@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" content="GC=chrome">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesone/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+</head>
+<body>
+    <section>
+        <div class="ap"></div>
+        <header>
+            <a href="#" class="logo">YshmaNews.com</a>
+            <ul class="navigation">
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="fdivers.html">Faits Divers</a></li>
+                <li><a href="lregionale.html">La Regionale</a></li>
+                <li><a href="annonces.html">Annonces</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </header>
+        <div class="contenu">
+            <div class="text-boite">
+                <h2>YshmaNews</h2>
+                <p>Bienvenu(e) sur le site 
+                officiel de votre quotidien d'information YSHMANEWS.</br>
+                Notre mission première, est de donner à la population 
+                ivoirienne en générale, et celle</br>
+                de la région de la mé en particulier,les informations du 
+                monde et de la Côte d'Ivoire.</br>
+                Couvrir l'actualité dans la zone de la mé, est aussi notre objectif, 
+                dans le cadre de la</br>
+                digitalisation et du numérique qui s'annonce comme un soleil, qui 
+                éclait le jour.</br>
+                YSHMANEWS, revêt un cadre d'expression de toute les communautés, 
+                et de tous les</br>
+                bords politique, religieux, ethnique, et social. Il se veut un 
+                canal par lequel tous pourront</br>
+                s'exprimer sans crainte de censure.</br>
+                Pour toutes vos annonces veuillez prendre contact avec notre service commmercial.
+            </p>
+            <a href="#" class="btn"><span>La Redaction</span></a>
+            </div>
+            <div class="imgboite">
+                <img src="./photo/logo.png" alt="" class="ImgNews">
+            </div>
+        </div>
+        <ul class="tab">
+            <li data-text="1"><img src="/photo/actualite.jpg" alt="" onclick="imageSlider('/photo/actualite.jpg'); couleurF('#c71585')"></li>
+            <li data-text="2"><img src="/photo/contacts.png" alt="" onclick="imageSlider('/photo/contacts.png');couleurF('#8b0000')"></li>
+            <li data-text="3"><img src="/photo/faits divers.jpg" alt="" onclick="imageSlider('/photo/faits divers.jpg');couleurF('#2f4f4f')"></li>
+            <li data-text="4"><img src="/photo/news.jpg" alt="" onclick="imageSlider('/photo/news.jpg');couleurF('#000080')"></li>
+            <li data-text="5"><img src="/photo/annonce-icon.png" alt="" onclick="imageSlider('/photo/annonce-icon.png');couleurF('#008080')"></li>
+        </ul>
+        <div class="reseau">
+            <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+            <a href="#"><i class="fa-brands fa-mailbox"></i></i></a>
+        </div>
+    </section>
+
+
+    <script>
+
+        function imageSlider(image){
+              document.querySelector('.ImgNews').src = image
+        }
+
+        function couleurF(couleur){
+              document.querySelector('.ap').style.background = couleur
+        }
+        
+    </script>
+</body>
+</html>
